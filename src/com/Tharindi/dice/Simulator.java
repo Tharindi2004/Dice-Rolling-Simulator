@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Simulator {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("How many dice would you like to roll?: ");
@@ -21,7 +21,7 @@ public class Simulator {
 
     }
 
-    static String display (int value) {
+    static String display(int value) {
         switch (value) {
             case 1:
                 return "---------\n|       |\n|   o   |\n|       |\n---------";
@@ -36,12 +36,13 @@ public class Simulator {
             case 6:
                 return "---------\n| o   o |\n| o   o |\n|  o   o|\n---------";
 
-            default: return "Not a valid die value";
+            default:
+                return "Not a valid die value";
         }
 
 
     }
-    }
+}
 
 
 
